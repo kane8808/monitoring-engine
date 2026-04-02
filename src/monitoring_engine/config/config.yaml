@@ -1,0 +1,24 @@
+log:
+  file_path: "logs\\app.log"
+  tail_n: 200
+  create_if_missing: true
+  encoding: "utf-8"
+
+cycle_seconds: 5
+
+network_rate_bps:
+  test_mode: false
+  test_multiplier: 1
+  rx:
+    warn: 1
+    critical: 10
+  tx:
+    warn: 1
+    critical: 10
+    
+alert:
+  slack:
+    enabled: true
+    webhook_url: ""
+    username: "Security Monitoring Engine"
+    icon_emoji: ":rotating_light:"
