@@ -7,4 +7,4 @@ risk evaluation, alerting, and evidence storage.
 
 ```bash
 cd src
-python -m monitoring_engine.main
+python3 -m monitoring_engine.main
